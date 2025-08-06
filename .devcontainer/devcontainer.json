@@ -1,0 +1,20 @@
+{
+  "name": "Python Data Science",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+      "customizations": {
+      "vscode": {
+  "settings": {
+    "python.pythonPath": "/opt/conda/bin/python"
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-toolsai.jupyter"
+  ],
+  "forwardPorts": []
+}
+
+      },
+  "postAttachCommand": "chmod +x .devcontainer/auto_commit.sh && .devcontainer/auto_commit.sh &"
+    }
